@@ -52,7 +52,7 @@ void Update(AlxWindow* w){
         }
     }
 
-    Elastic_Update(&env,F32_Min(w->ElapsedTime,0.5f));
+    Elastic_Update(&env,F32_Min(w->ElapsedTime,0.01f));
 
     Clear(BLACK);
 
